@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="b.css">
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "m1b-omp473Qo7eCtJ",
+    });
+    })();
+    </script>
+
+    <script src="script.js"> </script>
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Technical skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#get-in-touch">Get In Touch</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/akhil-ghanta/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Akhil-1809?tab=repositories"><i class="fab fa-github"></i></a>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id = "home" class="profile">
+            <div class="profile-content">
+                <h2>Akhil Chaitanya Ghanta</h2>
+                <p>A Master's student at SUNY Buffalo with a passion for technology and problem-solving. I am actively seeking internships and full-time opportunities to apply my skills, learn from industry experts, and contribute to impactful projects. With a strong background in software development, machine learning, and a drive to continuously improve, I am excited to connect with professionals and explore opportunities to grow in my career.</p>
+            </div>
+            <div class="profile-picture">
+                <img src="IMG-20220822-WA0026.jpg" alt="Akhil Chaitanya Ghanta">
+            </div>
+        </section>
+        
+        <section id="download-resume" class="download-resume">
+            <h2>Grab My Resume</h2>
+            <a href="Akhil12-9.pdf" class="download-btn" download="Akhil_Chaitanya_Resume.pdf">
+                Download Resume
+            </a>
+        </section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        
+        <section id = "education" class="education">
+            <h2>Education</h2>
+            <div class="education-container">
+                <div class="education-content">
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-details">
+                            <span class="education-period">Aug. 2023 – Dec. 2024</span>
+                            <h3>Masters in Computer Science</h3>
+                            <p>University at Buffalo (SUNY Buffalo), Buffalo, NY</p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-details">
+                            <span class="education-period">July 2019 – May 2023</span>
+                            <h3>B.Tech in Computer Science and Business Systems</h3>
+                            <p>Vellore Institute of Technology, Vellore, INDIA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-image">
+                    <img src="education.jpg" alt="Education Illustration">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Font Awesome for icons -->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        
+        
+        
+        
+        <section id = "skills" class="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <p>Python, C/C++, Java, JavaScript, HTML/CSS</p>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-database"></i> Database and Frameworks</h3>
+                    <p>SQL, MySQL, MongoDB, React, Node.js, Flask</p>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Developer Tools</h3>
+                    <p>Git, Docker, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse</p>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-layer-group"></i> Libraries</h3>
+                    <p>Pandas, NumPy, Matplotlib, Scikit-learn, Torch, NLTK, Regression models</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Font Awesome for icons -->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+        <section id = "projects" class="projects">
+            <h2>Projects</h2>
+            <div class="projects-content">
+                <a href="https://github.com/Akhil-1809/IMAGE_CAPTIONING" class="project-item" target="_blank">
+                    <div class="project-front">
+                        <div class="icon"><i class="fas fa-camera"></i></div> <!-- Icon placed above -->
+                        <h3>Image Captioning</h3>
+                        <p>Python, Pytorch, Flask, Streamlit</p>
+                        <span>Feb 2024 - Apr 2024</span>
+                    </div>
+                    <div class="project-back">
+                        <ul>
+                            <li>Developed a deep learning (LSTM, Transformers, and RNN) model in PyTorch to generate accurate and detailed image captions, significantly improving caption accuracy by 30%.</li>
+                            <li>Designed and optimized models to enhance both caption quality and overall model performance.</li>
+                        </ul>
+                    </div>
+                </a>
+        
+                <a href="https://github.com/Akhil-1809/SKIN-CANCER-DETECTION" class="project-item" target="_blank">
+                    <div class="project-front">
+                        <div class="icon"><i class="fas fa-heartbeat"></i></div> <!-- Icon placed above -->
+                        <h3>Predicting the Type of Skin Cancer</h3>
+                        <p>Python, Tensorflow, OpenCV, Flask, Streamlit</p>
+                        <span>Aug 2022 – Nov 2022</span>
+                    </div>
+                    <div class="project-back">
+                        <ul>
+                            <li>Employed Convolutional Neural Networks (CNNs) to classify distinct forms of skin cancer based on the analysis of outlier lesions in photographs.</li>
+                            <li>Used advanced deep learning to accurately identify skin cancer types, enhancing diagnostic capabilities in dermatology.</li>
+                        </ul>
+                    </div>
+                </a>
+        
+                <a href="https://github.com/yourusername/handwritten-prescription-recognition" class="project-item" target="_blank">
+                    <div class="project-front">
+                        <div class="icon"><i class="fas fa-notes-medical"></i></div> <!-- Icon placed above -->
+                        <h3>Handwritten Prescription Recognition</h3>
+                        <p>Python, Tensorflow, OpenCV, Flask</p>
+                        <span>Mar 2022 – Aug 2022</span>
+                    </div>
+                    <div class="project-back">
+                        <ul>
+                            <li>Developed a CNN-LSTM model that improved multi-line character recognition accuracy by 25%, utilizing the IAM dataset for training.</li>
+                            <li>Optimized training outcomes, achieving a validation accuracy of 86% and reducing the loss to 0.122.</li>
+                        </ul>
+                    </div>
+                </a>
+        
+                <a href="https://github.com/Akhil-1809/WEBCAM-MOTION-DETECT" class="project-item" target="_blank">
+                    <div class="project-front">
+                        <div class="icon"><i class="fas fa-video"></i></div> <!-- Icon placed above -->
+                        <h3>WebCam Motion Detector</h3>
+                        <p>Python, OpenCV, Pandas</p>
+                        <span>Dec 2020 – Jan 2021</span>
+                    </div>
+                    <div class="project-back">
+                        <ul>
+                            <li>Developed a motion detection system using Python, OpenCV, and Pandas to monitor and record time intervals of detected movements from webcam footage, achieving an accuracy rate of over 95% in detecting motion events.</li>
+                            <li>Implemented image processing techniques including frame comparison and Gaussian blur, processing 4 frames per second to identify motion, and storing results in a CSV for analysis.</li>
+                        </ul>
+                    </div>
+                </a>
+        
+                <a href="https://github.com/Akhil-1809/ACCUJOB-JOB-SEARCH-PLATFORM" class="project-item" target="_blank">
+                    <div class="project-front">
+                        <div class="icon"><i class="fas fa-briefcase"></i></div> <!-- Icon placed above -->
+                        <h3>AccuJob: Job Search Platform</h3>
+                        <p>Node.js, Express, MongoDB</p>
+                        <span>Aug 2020 – Nov 2020</span>
+                    </div>
+                    <div class="project-back">
+                        <ul>
+                            <li>Developed and launched a job search platform for job seekers, combining personalized recommendations based on interests, location, and skillset.</li>
+                            <li>Implemented a unique “recruitment probability” feature that leveraged skills and experience data to estimate the likelihood of getting hired.</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id = "publications" class="publications">
+            <h2>Publications</h2>
+            <div class="publications-content">
+                <div class="publication-item">
+                    <a href="http://www.ijcrt.org/papers/IJCRT2210242.pdf" target="_blank">
+                        <p><strong>Akhil Chaitanya Ghanta, Manish.CP, Sanjay Muzumdar, Dr Swarnalata P</strong>, "Accu Job-Job Search And Optimization Website", International Journal of Creative Research Thoughts (IJCRT), ISSN:2320-2882, Volume.10, Issue 10, pp.c69-c83, October 2022.</p>
+                    </a>
+                </div>
+                <div class="publication-item">
+                    <a href="http://www.ijcrt.org/papers/IJCRT2210438.pdf" target="_blank">
+                        <p><strong>Manish.CP, Akhil Chaitanya Ghanta, Dr J Ravi Sankar</strong>, "Medical Diagnosis Of Malaria Using Fuzzy Approach", International Journal of Creative Research Thoughts (IJCRT), ISSN:2320-2882, Volume.10, Issue 10, pp.d782-d787, October 2022.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id = "get-in-touch" class="get-in-touch">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name1">Name</label>
+                            <input type="text" id="name1" name="from_name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email1">Email</label>
+                            <input type="email" id="email1" name="from_email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message1">Message</label>
+                            <textarea id="message1" name="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" onclick= "sendMail()" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <p>If you'd like to get in touch, feel free to reach out through any of the following methods:</p>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:akhilchaitanyaghanta@gmail.com">akhilchaitanyaghanta@gmail.com</a></li>
+                        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/akhil-ghanta/" target="_blank">LinkedIn Profile</a></li>
+                        <li><i class="fab fa-github"></i> <a href="https://github.com/Akhil-1809?tab=repositories" target="_blank">GitHub Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- <script type="text/javascript">
+
+
+            function sendMail(){
+                let parms = {
+                    name : document.getElementById("name").value,
+                    email : document.getElementById("email").value,
+                    message : document.getElementById("message").value,
+                }
+
+
+            
+            // document.getElementById('contact-form').addEventListener('submit', function(event) {
+            //     event.preventDefault(); 
+        
+                // Service ID, Template ID, and Public Key
+                const serviceID = 'service_eoo51go'; // Your EmailJS service ID
+                const templateID = 'template_3tvma0g'; // Replace with your template ID
+                const publicKey = 'm1b-omp473Qo7eCtJ'; // Replace with your public key
+        
+                // Sending email using EmailJS
+                emailjs.sendForm(serviceID, templateID, parms)
+                    .then(() => {
+                        alert('Message sent successfully!');
+                    }, (error) => {
+                        alert('Failed to send the message. Please try again later.', error);
+                    });
+            };
+        </script> -->
+        
+        
+        
+        
+        
+
+
+    </main>
+</body>
+</html>

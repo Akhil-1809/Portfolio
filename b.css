@@ -1,0 +1,736 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+
+header {
+    background-color: #111;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+
+
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 20px;
+    background-color: #0a0a0a;
+    color: #fff;
+    text-align: center;
+}
+
+.profile-content {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.profile-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.profile-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 150px; /* Consistent size for all screens */
+    height: 150px; /* Consistent size for all screens */
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.profile-picture img:hover {
+    transform: scale(1.05); /* Subtle hover effect */
+}
+
+@media (min-width: 1024px) {
+    .profile {
+        flex-direction: row; /* Align content and picture side by side on larger screens */
+        text-align: left;
+        padding: 80px 40px;
+    }
+
+    .profile-content {
+        max-width: 60%;
+        margin-right: 40px;
+    }
+
+    .profile-picture img {
+        width: 200px; /* Larger size for desktop views */
+        height: 200px; /* Larger size for desktop views */
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-content h2 {
+        font-size: 28px;
+    }
+
+    .profile-content p {
+        font-size: 14px;
+    }
+
+    .profile-picture img {
+        width: 120px; /* Smaller size for mobile views */
+        height: 120px; /* Smaller size for mobile views */
+    }
+}
+
+
+.education {
+    padding: 60px 20px;
+    background-color: #0a0a0a; /* Matching the background with the profile section */
+    color: #fff;
+    text-align: center;
+}
+
+.education h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.education-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.education-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    background-color: #4a3b2f; /* A darker brown to blend with the background */
+    border-radius: 12px;
+    padding: 20px;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+.education-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8a735e; /* Darker accent color */
+    color: #1f1f1f;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.education-icon i {
+    font-size: 24px;
+}
+
+.education-details {
+    text-align: left;
+}
+
+.education-period {
+    display: block;
+    font-size: 14px;
+    color: #b0a08a; /* Softer color for the period text */
+    margin-bottom: 5px;
+}
+
+.education-item h3 {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.education-item p {
+    font-size: 16px;
+    margin: 0;
+    color: #ddd;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+}
+
+.education-image {
+    flex: 0.8; /* Further increase flex value to make the image larger */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+.education-image img {
+    width: 100%;
+    max-width: 450px; /* Increased max-width for larger image size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education h2 {
+        font-size: 28px;
+    }
+
+    .education-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .education-icon {
+        margin-bottom: 10px;
+    }
+
+    .education-image {
+        margin-top: 20px;
+        width: 80%; /* Adjust width for smaller screens */
+    }
+}
+
+.skills {
+    padding: 60px 20px;
+    background-color: #0a0a0a; /* Matching dark background color */
+    color: #fff;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.skills-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-category {
+    background-color: #1c1c1c; /* Darker card background to match the overall theme */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.skills-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.skills-category h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.skills-category h3 i {
+    margin-right: 8px;
+    color: #32cd32; /* Icon color */
+}
+
+.skills-category p {
+    font-size: 16px;
+    color: #cccccc;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.skills-category p::before {
+    content: "• ";
+    color: #32cd32;
+}
+
+@media (max-width: 768px) {
+    .skills h2 {
+        font-size: 28px;
+    }
+
+    .skills-content {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+.projects {
+    padding: 60px 20px;
+    background-color: #0a0a0a; /* Matching dark background */
+    color: #fff;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.projects-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between cards */
+}
+
+.project-item {
+    background-color: #1c1c1c; /* Card background color */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, max-height 0.3s ease; /* Smooth transition */
+    text-align: left;
+    position: relative;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px; /* Initial minimum height */
+    max-height: 350px; /* Initial max height to fit content */
+    overflow: hidden; /* Prevent overflow initially */
+}
+
+.project-item:hover {
+    transform: scale(1.05); /* Increase size by 5% on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    max-height: 600px; /* Allow card to expand vertically on hover */
+    overflow: visible; /* Allow content to be fully displayed */
+}
+
+.project-front, .project-back {
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: #1c1c1c; /* Ensures both sides have the same background */
+}
+
+.project-back {
+    transform: rotateY(180deg);
+    text-align: left;
+}
+
+.project-item:hover .project-front {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.project-item:hover .project-back {
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.project-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.project-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+.project-item span {
+    font-size: 14px;
+    color: #b0a08a; /* Softer color for dates */
+}
+
+.project-back ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+    color: #cccccc;
+}
+
+.project-back ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .projects h2 {
+        font-size: 28px;
+    }
+
+    .projects-content {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+
+.project-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.project-item h3 i {
+    font-size: 40px; /* Adjust icon size */
+    color: #ffffff; /* Match icon color with text */
+}
+
+
+
+.publications {
+    padding: 60px 20px;
+    background-color: #0a0a0a; /* Matching dark background */
+    color: #fff;
+    text-align: center;
+}
+
+.publications h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.publications-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between publication items */
+}
+
+.publication-item {
+    background-color: #1c1c1c; /* Background color for publication items */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    text-align: left;
+}
+
+.publication-item a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Text color */
+    display: block;
+}
+
+.publication-item a:hover {
+    color: #00bfff; /* Change text color on hover */
+}
+
+.publication-item p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.publication-item a:hover {
+    transform: scale(1.02); /* Slightly increase size on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .publications h2 {
+        font-size: 28px;
+    }
+
+    .publications-content {
+        padding: 0 10px;
+    }
+}
+
+
+
+
+.get-in-touch {
+    padding: 60px 20px;
+    background-color: #0a0a0a; /* Matching dark background */
+    color: #fff;
+    text-align: center;
+}
+
+.get-in-touch h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00bfff; /* Highlight color on focus */
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00bfff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0088cc;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info li i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #00bfff;
+}
+
+.contact-info a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .get-in-touch h2 {
+        font-size: 28px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed; /* Keeps the navbar at the top */
+    top: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensures navbar is above other content */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #00bfff; /* Highlight color on hover */
+}
+
+.section {
+    padding: 60px 20px;
+    margin-top: 60px; /* Offset for fixed navbar */
+}
+
+.download-resume {
+    padding: 60px 20px;
+    background-color: #0a0a0a; /* Different background for distinction */
+    color: #fff;
+    text-align: center;
+}
+
+.download-resume h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.download-resume p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00bfff;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #0088cc;
+    transform: scale(1.05);
+}
